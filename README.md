@@ -1,4 +1,4 @@
-App hasn't been deployed yet. You can either test it locally following the instructions below or view the screenshots in the "screenshots" directory for an overview.
+App hasn't been deployed yet. You can either test it locally or view the screenshots for an overview.
 
 # How To Test Locally
 1) Clone the repository.
