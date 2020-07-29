@@ -3,7 +3,7 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
-export default class CreateExercise extends Component {
+export default class CreateEntry extends Component {
   constructor(props) {
     super(props);
 
@@ -65,16 +65,16 @@ export default class CreateExercise extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    const exercise = {
+    const entry = {
       username: this.state.username,
       description: this.state.description,
       duration: this.state.duration,
       date: this.state.date
     }
 
-    console.log(exercise);
+    console.log(entry);
 
-    axios.post('http://localhost:5000/exercises/add', exercise)
+    axios.post('http://localhost:5000/entries/add', entry)
       .then(res => console.log(res.data));
 
     window.location = '/';
